@@ -1,0 +1,290 @@
+.header {
+
+	/*generic*/
+
+	@extend %absolute-cover;
+	position: fixed;
+	height: 6rem;
+	z-index: 3;
+
+	&__titles {
+		z-index: 1;
+		@extend %absolute-h-center;
+	}
+
+	&__title,
+	&__subtitle{
+		@extend %header-title;
+		color: $white;
+	}
+
+	&__titles--shadow {
+		z-index: 0;
+		color: black;
+	}
+
+	&__nav  {
+		ul {
+			padding-left: 0;
+		}
+		li {
+			@extend %unstyle-list;
+		}
+		&-trigger,
+		&-svg-frame {
+			@extend %absolute-cover;
+		}
+	}
+
+	/*mobile*/
+
+	@media screen and (max-width: 900px) {
+
+		padding-top: 4vw;
+		padding-bottom: 3vw;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		top:0;
+		width: 100%;
+		height: auto;
+		overflow: visible;
+
+		/*heading*/
+		
+		&__titles,
+		&__titles--shadow {
+			transform: none;
+			position: relative;
+			left: auto;
+			width: 80vw;
+		}
+
+		&__title,
+		&__title--shadow {
+			font-size: 10vw;
+		}
+
+		&__subtitle,
+		&__subtitle--shadow {
+			font-size: 6vw
+		}
+
+		/*color wipe*/
+
+		&__color-wipe {
+			position: absolute;
+			top: 10vw;
+			right: 10vw;
+			border-radius: 50%;
+			height: 2vw;
+			width: 2vw;
+			background-color: white;
+			opacity: 0;
+		}
+
+		/*nav*/
+
+		&__nav {
+
+			margin-right: 5vw;
+
+			ul {
+				padding: 0;
+				margin: 0;
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				display: none;
+				flex-direction: column;
+				justify-content: center;
+    			align-items: center;
+			} 
+
+			li {
+				color: #516e8f;
+				font-size: 10vw;
+				opacity: 0;
+				font-weight: 600;
+				padding: 3vw 10vw;
+				margin: 2vw 0;
+				&:first-child {
+					margin-top: -3vw;
+				}
+				a {
+					text-decoration: none;
+				}
+			}
+
+			&.open {
+				ul { 
+					display: flex;
+				}
+				li { 
+					display: block;
+				}
+			}
+
+			.tech-page &-tech,
+			.index-page &-about,
+			.about-page &-about,
+			.examples-page &-examples {
+				a {
+					text-decoration: underline;
+				}
+			}
+			
+			
+			
+			li {
+				display: none;
+			}
+
+			&-trigger-container {
+				width: 2.4rem;
+				height: 2.2rem;
+				margin-top: 20%;
+				position: relative;
+			}
+
+			&-trigger {
+				display: inline-block;
+				padding: 0;
+				margin: 0 0.3rem;
+				-webkit-appearance: none;
+				outline: 0;
+				box-sizing: border-box;
+				transform: skew(-24deg);
+				border-radius: 0.6rem;
+				background-color: #516e8f;
+				border-left: 1.2rem solid white;
+				border-right: 1.2rem solid white;
+				border-top: 1.1rem solid white;
+				border-bottom: 1.1rem solid white;
+			}
+
+			
+			&-svg-frame {
+				pointer-events: none;
+				width: 110%;
+				top: 0%;
+				left: 6%;
+			}
+
+		}
+
+	}
+	
+	/*tablet and desktop*/
+
+	@media screen and (min-width: 901px) {
+
+		/*heading*/
+
+		&__titles,
+		&__titles--shadow {		
+			//position: relative;
+			.tech-starting-page &,
+			.examples-starting-page & {
+				top: 0.5rem;
+				width: 28rem;
+				@media screen and (max-width: 1200px) {
+					left: 2rem;
+					transform: none;
+				}
+			}
+			.about-starting-page &,
+			.index-starting-page & {
+				top: 9.5rem;
+				width: 40rem;
+			}
+		}
+
+		&__title,
+		&__title--shadow {
+			font-size: 4rem;
+			.about-starting-page &,
+			.index-starting-page & {
+				font-size: 5rem;
+			}	
+		}
+
+		&__subtitle,
+		&__subtitle--shadow {
+			font-size: 2.5rem;
+			.about-starting-page &,
+			.index-starting-page & {
+				font-size: 3rem;
+			}
+		}
+
+		/*nav*/
+
+		&__nav {
+			position: fixed;
+			right: 2rem;
+			top: 2.5rem;
+			display: inline-flex;
+			ul {
+				margin: 0;
+				display: inline-flex;
+			}
+
+			li {
+				margin: 0 0.3rem;
+				transform: skew(-24deg);
+				background-color: $white;
+				border-radius: 0.6rem;
+				font-size: 1.0625rem;
+				border: 2px solid #516e8f;
+				&:hover {
+					background-color: transparentize($hot-teal, 0.1);
+					border: 2px solid transparentize($hot-teal, 0.1);
+					a {
+						color: $white;
+					}
+				}
+			}
+
+			a,
+			a:link,
+			a:active,
+			a:visited {
+				padding: 0.4em 1.2em;
+				transform: skew(24deg);
+				display: inline-block;
+				color: #516e8f;
+				text-decoration: none;
+			}
+
+			.tech-page &-tech,
+			.index-page &-about,
+			.about-page &-about,
+			.examples-page &-examples {
+				cursor: default;
+				pointer-events: none;
+				background-color: #516e8f;
+				border: 2px solid white;
+				a {
+					color: white;
+				}
+				&:hover{
+					background-color: inherit;
+					border: inherit;
+					a {
+						color: inherit;
+					}
+				}
+			}
+
+			&-trigger-container {
+				display: none;
+			}
+		}
+
+
+	}
+
+}

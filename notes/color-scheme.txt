@@ -1,0 +1,9 @@
+#43B2AC rgba(67, 178, 172, 1) teal
+#34F7C0 rgba(52, 247, 192, 1) hot teal
+#ff6bf0 rgba(255, 107, 240, 1 ) pink 
+#EA27A3 rgba(234, 39, 163, 1) hot pink
+#271E51 rgba(39, 30, 81, 1) indigo
+
+#ffffff rgba(250, 250, 250, 1) white
+rgba(250, 250, 250, 0.3) tint
+rgba(250, 250, 250, 0) transparent

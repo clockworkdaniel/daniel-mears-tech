@@ -1,0 +1,34 @@
+Work list priorities:
+
+6) Make example page
+    //time : 3
+    //importance : 2
+
+
+
+Find font for pull out quotes
+
+Tauri, try pt sans
+
+
+//Fix android chrome fill opacity bug
+
+7) Perfect Tablet
+    //time : 1,
+    //importance : 1
+
+9) Fix chrome <a> bug
+    // time : 2
+    //importance : 1
+
+10) Change page animations on desktop
+    // time : 3
+    // importance : 1
+
+//Minify CSS
+//robots
+//sitemap
+//https
+
+Mob Idea - click link, underline wipes across underneath then fades out (gives more time to download too)
+Desk idea - fancier effect on header entry

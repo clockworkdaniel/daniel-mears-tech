@@ -25,6 +25,43 @@
 
 }
 
+@media screen and (min-width: 701px) {
+
+	.flamingo-game,
+	.amp-product-page {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+	}
+
+	.fake-phone {
+		background-image: url(../../images/phone-background.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 732px;
+		width: 361px;
+		padding: 82px 20px;
+		box-sizing: border-box;
+
+		iframe {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+}
+
+
+
+#flamingo-canvas {
+	outline: none;
+	border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+
 .examples {
 
 	/*generic*/
@@ -259,3 +296,4 @@
         font-size: 1.05rem
     }
 }
+

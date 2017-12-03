@@ -8,12 +8,19 @@
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/manifest.json">
-
-        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <script type="text/javascript" defer src="flamingo-game.js"></script>
+        <link rel="stylesheet" type="text/css" href="../../css/main.css" />
         <title>Flamingo Game – Daniel Mears – Front End Developer</title>
         <meta name="description" content="Daniel Mears is a creative Front End Developer based in London. He is a specialist in complex Front End Javascript and CSS."/>
     </head>
     <body class="flamingo-game">
-
+        <div class="fake-phone">
+            <canvas id="flamingo-canvas" tabindex="0" width="320" height="568">
+            </canvas>
+            <div id="control-area">
+                <div id="share-button">
+                </div>
+            </div>
+        </div>
     </body>
 </html>

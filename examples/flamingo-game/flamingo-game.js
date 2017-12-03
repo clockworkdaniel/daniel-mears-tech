@@ -1,6 +1,24 @@
 var fl = {};
 
-$.getScript("https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js", function () {
+function getScript(source, callback) {
+	var script = document.createElement('script');
+	var prior = document.getElementsByTagName('script')[0];
+	script.async = 1;
+
+	script.onload = script.onreadystatechange = function (_, isAbort) {
+		if (isAbort || !script.readyState || /loaded|complete/.test(script.readyState)) {
+			script.onload = script.onreadystatechange = null;
+			script = undefined;
+
+			if (!isAbort) { if (callback) callback(); }
+		}
+	};
+
+	script.src = source;
+	prior.parentNode.insertBefore(script, prior);
+}
+
+getScript("https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js", function() {
 	WebFont.load({
 		google: {
 			families: ['VT323']
@@ -1081,7 +1099,7 @@ function detectCollision(element) {
 	if (element.x < fl.collisionZone) {
 
 		for (var point in fl.colPoints) {
-			if (fl.$adjColPoints[point].x > element.x && fl.adjColPoints[point].x < element.x + element.width && fl.adjColPoints[point].y > element.y && fl.adjColPoints[point].y < element.y + element.height) {
+			if (fl.adjColPoints[point].x > element.x && fl.adjColPoints[point].x < element.x + element.width && fl.adjColPoints[point].y > element.y && fl.adjColPoints[point].y < element.y + element.height) {
 				element.hasCollided = true;
 				element.fill = 'red';
 				death();

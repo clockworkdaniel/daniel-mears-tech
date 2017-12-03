@@ -14,10 +14,17 @@ document.addEventListener('click', function (e) {
 	}
 	//if element being clicked bubbles to a link
 	if (el) {
+
 		//return if the link being clicked is absolute
-		if (isAbsolute.test(el.getAttribute('href'))) {
+		if (el.hasAttribute('data-iframe-trigger')) {
+			e.preventDefault();
+			showIframe(el.pathname);
 			return;
 		}
+		else if (isAbsolute.test(el.getAttribute('href'))) {
+			return;
+		}
+
 		e.preventDefault();
 		changePage(el.pathname, true);
 	}

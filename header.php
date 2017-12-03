@@ -16,6 +16,7 @@
         <script type="text/javascript" defer src="js/index.js"></script>
         <script type="text/javascript" defer src="js/scrollTrigger.js"></script>
         <script type="text/javascript" defer src="js/pageFlow.js"></script>
+        <script type="text/javascript" defer src="js/examples.js"></script>
         <!-- <script type="text/javascript" defer src="js/production.js"></script> -->
         <link rel="stylesheet" type="text/css" href="css/main.css" />
         <!-- <link rel="stylesheet" type="text/css" href="css/production.css" /> -->

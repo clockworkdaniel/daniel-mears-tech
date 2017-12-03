@@ -1,4 +1,4 @@
-.background__overlay, .background__shade, .background__svg-frame, .header, .header__nav-trigger, .header__nav-svg-frame {
+.background__overlay, .background__shade, .background__svg-frame, .header, .header__nav-trigger, .header__nav-svg-frame, .examples-iframe__container {
   position: absolute;
   left: 0;
   top: 0;
@@ -457,14 +457,14 @@ body {
   .examples-page .casino {
     transform: translate(-2%, -670%) rotate(-90deg) scale(12.4); } }
 
-@media screen and (min-width: 701px) {
-  .flamingo-game,
-  .amp-product-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; }
+iframe {
+  border: none; }
 
+@media screen and (max-width: 700px) {
+  .fake-phone {
+    height: 100vh;
+    width: 100vw; } }
+@media screen and (min-width: 701px) {
   .fake-phone {
     background-image: url(../../images/phone-background.png);
     background-repeat: no-repeat;
@@ -472,16 +472,28 @@ body {
     height: 732px;
     width: 361px;
     padding: 82px 20px;
-    box-sizing: border-box; }
+    box-sizing: border-box; } }
+.fake-phone #flamingo-canvas,
+.fake-phone iframe {
+  width: 100%;
+  outline: none; }
+  @media screen and (min-width: 701px) {
+    .fake-phone #flamingo-canvas,
     .fake-phone iframe {
-      width: 100%;
-      height: 100%; } }
-#flamingo-canvas {
-  outline: none;
-  border-width: 2px;
-  border-style: inset;
-  border-color: initial;
-  border-image: initial; }
+      border-width: 2px;
+      border-style: inset;
+      border-color: initial;
+      border-image: initial; } }
+.fake-phone iframe {
+  height: 100%; }
+
+.flamingo-game,
+.amp-product-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent; }
 
 .examples {
   /*generic*/
@@ -493,6 +505,19 @@ body {
       opacity: 0; }
       .examples-content .pull-out-copy.triggered {
         opacity: 1; }
+  .examples-iframe__container {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.64);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 5;
+    transition: 300ms opacity; }
+    .examples-iframe__container.shown {
+      opacity: 1;
+      visibility: visible; }
+  .examples-iframe {
+    width: 100vw;
+    min-height: 100vh; }
   .examples-list {
     padding-top: 0; }
   .examples-item--small, .examples-item--large-left, .examples-item--large-right {

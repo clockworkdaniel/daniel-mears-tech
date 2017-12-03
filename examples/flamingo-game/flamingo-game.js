@@ -1180,3 +1180,5 @@ loadImages(function () {
 		requestAnimationFrame(gameLoop);
 	})();
 });
+
+canvas.focus();

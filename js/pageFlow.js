@@ -17,11 +17,16 @@ document.addEventListener('click', function (e) {
 
 		//return if the link being clicked is absolute
 		if (el.hasAttribute('data-iframe-trigger')) {
-			e.preventDefault();
-			showIframe(el.pathname);
-			return;
-		}
-		else if (isAbsolute.test(el.getAttribute('href'))) {
+			if (DM.viewportWidth > 700) {
+				e.preventDefault();
+				showIframe(el.pathname);
+				return;
+			}
+			else {
+				return;
+			}
+			
+		} else if (isAbsolute.test(el.getAttribute('href'))) {
 			return;
 		}
 

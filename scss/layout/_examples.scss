@@ -67,6 +67,7 @@ iframe {
 	justify-content: center;
 	align-items: center;
 	background-color: transparent;
+	font-size: 0;
 }
 
 .examples {
@@ -163,6 +164,8 @@ iframe {
 
 		}
 
+		
+
 		&-item {
 			&--small,
 			&--large-left,
@@ -173,6 +176,9 @@ iframe {
 				font-size: 2rem;
 				line-height: 1;
 				margin: 1rem 0;
+			}
+			&__link {
+				height: 36vw;
 			}
 		}
 

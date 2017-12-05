@@ -532,7 +532,7 @@ body {
   .examples-item--small, .examples-item--large-left, .examples-item--large-right {
     background-color: teal;
     opacity: 0.2; }
-  .examples-item__link {
+  .examples-item__image {
     border: 1px white solid;
     display: block; }
   .examples-item__image {

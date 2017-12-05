@@ -40,6 +40,12 @@
 
 	@media screen and (max-width: 900px) {
 
+		/*temp fix*/
+		.examples-page & { 
+			background-color: #f37e55;
+		}
+
+
 		padding-top: 4vw;
 		padding-bottom: 3vw;
 		display: flex;
@@ -81,6 +87,7 @@
 			width: 2vw;
 			background-color: white;
 			opacity: 0;
+			pointer-events: none;
 		}
 
 		/*nav*/

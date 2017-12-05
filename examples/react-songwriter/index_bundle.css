@@ -202,11 +202,12 @@ button:hover {
 
 .line__lyrics-input {
   width: 100%;
+  max-width: 33rem;
   display: block; }
 .ui-controls {
   position: fixed;
   top: 3rem;
-  right: 3rem;
+  right: 10rem;
   z-index: 1;
   display: flex;
   flex-direction: column;

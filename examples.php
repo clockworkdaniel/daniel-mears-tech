@@ -24,7 +24,7 @@
 				</div>
 			</li>
 			<li class="examples__item">
-				<!-- <a class="examples__item-image flamingo-game-image" data-iframe-trigger href="/examples/flamingo-game/index.php">
+				<!-- <a class="examples__item-image flamingo-game-image" data-iframe-trigger href="/example/flamingo-game/index.php">
 				</a> -->
 				<div class="examples__item-copy">
 					<h2 class="examples__item-title trigger-on-scroll" data-trigger-point="0.1">Flamingo Game</h2>
@@ -34,12 +34,12 @@
 						<li>Canvas API</li>
 						<li>Touch Events API</li>
 					</ul>
-					<p class="examples__item-text-link trigger-on-scroll" data-trigger-point="0.1"><a href="/examples/flamingo-game/index.php" title="Flamingo Game" data-iframe-trigger >See this example &rarr;</a></p>
+					<p class="examples__item-text-link trigger-on-scroll" data-trigger-point="0.1"><a href="/example/flamingo-game/index.php" title="Flamingo Game" data-iframe-trigger >See this example &rarr;</a></p>
 					<hr class="examples__item-hr trigger-on-scroll" data-trigger-point="0.1">
 				</div>
 			</li>
 			<li class="examples__item">
-				<!-- <a class="examples__item-image" data-iframe-trigger href="/examples/amp-product-page/index.php">
+				<!-- <a class="examples__item-image" data-iframe-trigger href="/example/amp-product-page/index.php">
 				</a> -->
 				<div class="examples__item-copy">
 					<h2 class="examples__item-title  trigger-on-scroll" data-trigger-point="0.1">AMP Product Page</h2>
@@ -49,7 +49,7 @@
 						<li>Interactivity through amp-bind rather than JS</li>
 						<li>Stripped down HTML/CSS</li>
 					</ul>
-					<p class="examples__item-text-link trigger-on-scroll" data-trigger-point="0.1"><a href="/examples/amp-product-page/index.php" title="AMP Product Page" data-iframe-trigger >See this example &rarr;</a></p>
+					<p class="examples__item-text-link trigger-on-scroll" data-trigger-point="0.1"><a href="/example/amp-product-page/index.php" title="AMP Product Page" data-iframe-trigger >See this example &rarr;</a></p>
 					<hr class="examples__item-hr trigger-on-scroll" data-trigger-point="0.1">
 				</div>
 			</li>

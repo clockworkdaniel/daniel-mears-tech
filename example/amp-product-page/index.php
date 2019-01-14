@@ -10,8 +10,8 @@
         <link rel="manifest" href="/manifest.json">
 
         <link rel="stylesheet" type="text/css" href="../../css/main.css" />
-        <title>AMP Product Page – Daniel Mears – Front End Developer</title>
-        <meta name="description" content="Daniel Mears is a creative Front End Developer based in London. He is a specialist in complex Front End Javascript and CSS."/>
+        <title>AMP Product Page – Daniel Mears – Web Developer</title>
+        <meta name="description" content="Daniel Mears is a creative Web Developer based in London. He is a specialist in complex Front End Javascript and CSS."/>
     </head>
     <body class="amp-product-page">
         <div class="fake-phone">

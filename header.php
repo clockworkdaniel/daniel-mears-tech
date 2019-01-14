@@ -8,10 +8,10 @@
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/manifest.json">
-        <script type="text/javascript" defer src="vendor/TweenMax.min.js"></script>
-        <script type="text/javascript" defer src="vendor/TimelineLite.min.js"></script>
-        <script type="text/javascript" defer src="vendor/DrawSVGPlugin.min.js"></script>
-        <script type="text/javascript" defer src="js/utility.js"></script>
+        <script type="text/javascript" src="vendor/TweenMax.min.js"></script>
+        <script type="text/javascript" src="vendor/TimelineLite.min.js"></script>
+        <script type="text/javascript" src="vendor/DrawSVGPlugin.min.js"></script>
+        <script type="text/javascript" src="js/utility.js"></script>
         <script type="text/javascript" defer src="js/animations.js"></script>
         <script type="text/javascript" defer src="js/index.js"></script>
         <script type="text/javascript" defer src="js/scrollTrigger.js"></script>
@@ -19,7 +19,7 @@
         <script type="text/javascript" defer src="js/examples.js"></script>
         <link rel="stylesheet" type="text/css" href="css/main.css" />
         <title>Daniel Mears – Web Developer</title>
-        <meta name="description" content="Daniel Mears is a creative Web Developer based in London. He is a specialist in complex Javascript and CSS."/>
+        <meta name="description" content="Daniel Mears is a creative Web Developer based in London. He is a specialist in complex Front End Javascript and CSS."/>
     </head>
 
     <?php 
@@ -140,13 +140,13 @@
             <nav class="header__nav">
                 <ul>
                     <li class="header__nav-about">
-                        <a href="/about">About</a>
+                        <a href="/about.php">About</a>
                     </li>
                     <li class="header__nav-tech">
-                        <a href="/tech">Tech</a>
+                        <a href="/tech.php">Tech</a>
                     </li>
                     <li class="header__nav-examples" >
-                        <a href="/examples">Examples</a>
+                        <a href="/examples.php">Examples</a>
                     </li>
                 </ul>
                 <div class="header__nav-trigger-container">

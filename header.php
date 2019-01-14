@@ -17,11 +17,9 @@
         <script type="text/javascript" defer src="js/scrollTrigger.js"></script>
         <script type="text/javascript" defer src="js/pageFlow.js"></script>
         <script type="text/javascript" defer src="js/examples.js"></script>
-        <!-- <script type="text/javascript" defer src="js/production.js"></script> -->
         <link rel="stylesheet" type="text/css" href="css/main.css" />
-        <!-- <link rel="stylesheet" type="text/css" href="css/production.css" /> -->
-        <title>Daniel Mears – Front End Developer</title>
-        <meta name="description" content="Daniel Mears is a creative Front End Developer based in London. He is a specialist in complex Front End Javascript and CSS."/>
+        <title>Daniel Mears – Web Developer</title>
+        <meta name="description" content="Daniel Mears is a creative Web Developer based in London. He is a specialist in complex Javascript and CSS."/>
     </head>
 
     <?php 

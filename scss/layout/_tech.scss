@@ -1,147 +1,139 @@
 .tech-starting-page {
-	@media screen and (min-width: 701px) {
-		.casino {
-			transform: translate(37%, 176%) rotate(-90deg) scale(3);
-		}
-	}
-	@media screen and (min-width: 901px){
-		.background__overlay {
-			background-color: $teal;
-		}
-	}
+  @media screen and (min-width: 701px) {
+    .casino {
+      transform: translate(37%, 176%) rotate(-90deg) scale(3);
+    }
+  }
+  @media screen and (min-width: 901px) {
+    .background__overlay {
+      background-color: $teal;
+    }
+  }
 }
 
 .tech-page {
-	@media screen and (max-width: 900px) {
-		.background__overlay {
-			background-color: $teal;
-		}
-	}
-	@media (max-width: 700px) {
-		.casino {
-			transform: translate(50%, -103%) rotate(-90deg) scale(3.4);
-		}
-	}
-	.background {
-		left: -10vw;
-		top: -10vh;
-		width: 120vw;
-		height: 120vh;
-	}
+  @media screen and (max-width: 900px) {
+    .background__overlay {
+      background-color: $teal;
+    }
+  }
+  @media (max-width: 700px) {
+    .casino {
+      transform: translate(50%, -103%) rotate(-90deg) scale(3.4);
+    }
+  }
+  .background {
+    left: -10vw;
+    top: -10vh;
+    width: 120vw;
+    height: 120vh;
+  }
 }
 
 .tech {
+  /*generic*/
 
-	/*generic*/
+  &-content {
+    margin: auto;
 
-	&-content {
-		margin: auto;
+    .pull-out-copy {
+      -webkit-backface-visibility: hidden;
+      transition: opacity 250ms;
+      opacity: 0;
+      &.triggered {
+        opacity: 1;
+      }
+    }
+  }
 
-	.pull-out-copy {
-		-webkit-backface-visibility: hidden;
-		transition: opacity 250ms;
-		opacity: 0;
-		&.triggered {
-			opacity: 1;
-		}
-	}
+  &-list {
+    @extend %unstyle-list;
 
-	}
+    // &__item {
 
-	&-list {
-		@extend %unstyle-list;
+    // }
 
-		// &__item {
+    &__heading {
+      @extend %display;
+      transition: opacity 250ms;
+      opacity: 0;
+    }
 
-		// }
+    &__copy {
+      transition: opacity 220ms 100ms;
+      opacity: 0;
+      .triggered & {
+        opacity: 1;
+      }
+    }
+  }
 
-		&__heading {
-			@extend %display;
-			transition: opacity 250ms;
-			opacity: 0;
-		}
+  /*mobile*/
 
-		&__copy{
-			transition: opacity 220ms 100ms;
-			opacity: 0;
-			.triggered & {
-				opacity: 1;
-			}
-		}
-	}
+  @media screen and (max-width: 700px) {
+    &-content {
+      margin-top: 32vw;
+      width: 90vw;
 
-	/*mobile*/
+      .pull-out-copy {
+        font-size: 1.6rem;
+      }
+    }
 
-	@media screen and (max-width: 700px) {
+    &-list {
+      padding-left: 1em;
 
-		&-content {
-			margin-top: 32vw;
-			width: 90vw;
+      &__item {
+        margin-bottom: 3rem;
+      }
 
-			.pull-out-copy {
-				font-size: 1.6rem;
-			}
-		}
+      &__heading {
+        font-size: 2rem;
+        line-height: 1;
+        margin: 1rem 0;
+        .triggered & {
+          opacity: 1;
+        }
+      }
+    }
+  }
 
+  @media screen and (min-width: 701px) {
+    &-content {
+      padding: 0 4rem;
+      margin-top: 13rem;
 
-		&-list {
-			padding-left: 1em;
+      .pull-out-copy {
+        margin-bottom: 7rem;
+      }
+    }
 
-			&__item {
-				margin-bottom: 3rem;
-			}
+    &-list {
+      padding-left: 3.5em;
+      max-width: 40rem;
 
-			&__heading{
-				font-size: 2rem;
-				line-height: 1;
-				margin: 1rem 0;
-				.triggered & {
-					opacity: 1;
-				}
-			}
-		}
+      &__item {
+        position: relative;
+        margin: 5rem 0;
+      }
 
-	}
+      &__copy {
+        z-index: 2;
+      }
 
-	@media screen and (min-width: 701px) {
-
-		&-content {
-			
-			padding: 0 4rem;
-			margin-top: 13rem;
-			
-			.pull-out-copy {
-				margin-bottom: 7rem;
-			}
-		}
-
-		&-list {
-			
-			padding-left: 3.5em;
-			max-width: 40rem;
-
-			&__item {
-				position: relative;
-				margin: 5rem 0;
-			}
-
-			&__copy {
-				z-index: 2;
-			}
-
-			&__heading{
-				font-size: 5rem;
-				display: inline-block;
-				position:absolute;
-				top: -0.92em;
-				left: -0.7em;
-				margin: 0;
-				z-index: 1;
-				white-space: nowrap;
-				.triggered & {
-					opacity: 0.3;
-				}
-			}
-		}	
-	}
+      &__heading {
+        font-size: 5rem;
+        display: inline-block;
+        position: absolute;
+        top: -0.92em;
+        left: -0.7em;
+        margin: 0;
+        z-index: 1;
+        white-space: nowrap;
+        .triggered & {
+          opacity: 0.3;
+        }
+      }
+    }
+  }
 }

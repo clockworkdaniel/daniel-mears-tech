@@ -1,108 +1,107 @@
 html {
-	font-family: arial, 'sans-serif';
-	font-size: 16px;
-	@media screen and (min-width: 900px) {
-		overflow-y: scroll;
-	}
+  font-family: arial, "sans-serif";
+  font-size: 16px;
+  @media screen and (min-width: 900px) {
+    overflow-y: scroll;
+  }
 }
 
 body {
-	background-color: $white;
-	text-align: center;
-	padding: 0;
-	margin: 0;
+  background-color: $white;
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 .background {
-	@extend %fixed-background;
-	z-index: -1;
+  @extend %fixed-background;
+  z-index: -1;
 }
 
 .background__overlay {
-	@extend %absolute-cover;
-	//background: black;
-	background: $hot-pink;
-	opacity: 0.85;
-	mix-blend-mode: color;
-	z-index: 2;
+  @extend %absolute-cover;
+  //background: black;
+  background: $hot-pink;
+  opacity: 0.85;
+  mix-blend-mode: color;
+  z-index: 2;
 }
 
 .background__shade {
-	@extend %absolute-cover;
-	//background: black;
-	opacity: 0.2;
-	z-index: 3;
+  @extend %absolute-cover;
+  //background: black;
+  opacity: 0.2;
+  z-index: 3;
 }
 
 .background__svg-frame {
-	@extend %absolute-cover;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  @extend %absolute-cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .casino {
-	width: 90vw;
-	max-width: 90rem;
-	z-index: 0;
-	opacity: 0.33;
-	@media screen and (max-width: 700px) {
-		transform: rotate(-90deg) scale(1.5);
-	}
+  width: 90vw;
+  max-width: 90rem;
+  z-index: 0;
+  opacity: 0.33;
+  @media screen and (max-width: 700px) {
+    transform: rotate(-90deg) scale(1.5);
+  }
 }
 
 @supports not (mix-blend-mode: color) {
-		.background__overlay {
-			z-index: -2;
-		}
-		.casino {
-			z-index: -1;
-		}
-
+  .background__overlay {
+    z-index: -2;
+  }
+  .casino {
+    z-index: -1;
+  }
 }
 
-.casino  {
-	//gradient stops
-	.stop-1 {
-	  stop-color: rgb(234, 39, 163);
-	}
-	.stop-2 {
-		stop-color: #ffffff;
-	}
-	//white
-	.pickup-switch-inner {
-		stroke: #FFF;
-		fill: #FFF;
-	}
-	//highlight
-	.body {
-		stroke: #FFF;
-		fill: #CCCCCC;
-	}
-	//mid
-	.pickup-switch-outer,
-	.bridge,
-	.speed-holes path,
-	.neck-pickup,
-	.bridge-pickup,
-	.knobs circle,
-	.tuners path,
-	.tailpiece path,
-	.tailpiece rect,
-	.frets rect,
-	.tuning-pins circle {
-		stroke: #FFF;
-		fill: url(#metalGradient);
-	}  
-	//shadow 
-	.neck,
-	.speed-holes path{
-		stroke: #FFF;
-		fill: black;
-	}
-	//nofill
-	.strings polyline {
-		stroke: #FFF;
-		fill: none;
-	}
+.casino {
+  //gradient stops
+  .stop-1 {
+    stop-color: rgb(234, 39, 163);
+  }
+  .stop-2 {
+    stop-color: #ffffff;
+  }
+  //white
+  .pickup-switch-inner {
+    stroke: #fff;
+    fill: #fff;
+  }
+  //highlight
+  .body {
+    stroke: #fff;
+    fill: #cccccc;
+  }
+  //mid
+  .pickup-switch-outer,
+  .bridge,
+  .speed-holes path,
+  .neck-pickup,
+  .bridge-pickup,
+  .knobs circle,
+  .tuners path,
+  .tailpiece path,
+  .tailpiece rect,
+  .frets rect,
+  .tuning-pins circle {
+    stroke: #fff;
+    fill: url(#metalGradient);
+  }
+  //shadow
+  .neck,
+  .speed-holes path {
+    stroke: #fff;
+    fill: black;
+  }
+  //nofill
+  .strings polyline {
+    stroke: #fff;
+    fill: none;
+  }
 }

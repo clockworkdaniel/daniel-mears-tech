@@ -1,72 +1,66 @@
 .about-starting-page {
-	.casino {
-		@media screen and (min-width: 701px) {
-			transform: translate(121%, -46%) rotate(-11deg) scale(3);
-		}
-		@media (orientation: portrait) {
-			transform: translate(42%, -328%) rotate(-71deg) scale(7.4);
-		}
-	}
+  .casino {
+    @media screen and (min-width: 701px) {
+      transform: translate(121%, -46%) rotate(-11deg) scale(3);
+    }
+    @media (orientation: portrait) {
+      transform: translate(42%, -328%) rotate(-71deg) scale(7.4);
+    }
+  }
 }
 
 .index-starting-page {
-	.casino,
-	.content-area,
-	header {
-		visibility: hidden;
-	}
+  .casino,
+  .content-area,
+  header {
+    visibility: hidden;
+  }
 }
 
-
 .about-page {
-	.background__overlay {
-		background-color: $hot-pink;
-	}
-	@media (max-width: 700px){
-		.casino {
-			transform: translate(42%, -328%) rotate(-71deg) scale(7.4);
-		}
-	}
+  .background__overlay {
+    background-color: $hot-pink;
+  }
+  @media (max-width: 700px) {
+    .casino {
+      transform: translate(42%, -328%) rotate(-71deg) scale(7.4);
+    }
+  }
 }
 
 .about-content {
+  /*generic*/
 
-	/*generic*/
+  margin: auto;
 
-	margin: auto;
+  p {
+    text-align: center;
+  }
 
-	p {
-		text-align: center;
-	}
-	
-	/*mobile*/
+  /*mobile*/
 
-	@media screen and (max-width: 900px) {
+  @media screen and (max-width: 900px) {
+    margin-top: 40vw;
+    width: 90vw;
 
-		margin-top: 40vw;
-		width: 90vw;
+    .pull-out-copy {
+      font-size: 1.6rem;
+      margin-bottom: 3rem;
+    }
 
-		.pull-out-copy {
-			font-size: 1.6rem;
-			margin-bottom: 3rem;
-		}
+    .main-copy {
+      margin: 2rem 0;
+    }
+  }
 
-		.main-copy {
-			margin: 2rem 0;
-		}
+  /*tablet and deskto*/
 
-	}
+  @media screen and (min-width: 901px) {
+    padding: 0 4rem;
+    margin-top: 22rem;
 
-	/*tablet and deskto*/
-
-	@media screen and (min-width: 901px) {
-
-		padding: 0 4rem;
-		margin-top: 22rem;
-
-		.main-copy {
-			font-size: 1.05rem;
-		}
-		
-	}
+    .main-copy {
+      font-size: 1.05rem;
+    }
+  }
 }

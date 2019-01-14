@@ -70,6 +70,7 @@ function changePage(newPath, fromLink) {
 
 	//fade out content
 	mainContentFade(false);
+	window.scrollTo(0,0);
 
 	var toPage = newPath.replace('/', '').replace('.php', '');
 	

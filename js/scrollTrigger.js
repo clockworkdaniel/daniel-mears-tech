@@ -3,9 +3,9 @@ var ST = {};
 window.onload = function () {
 
 	if (DM.viewportWidth > 700) {
-		ST.headerHeight = 200;
+		ST.headerHeight = 130;
 	} else {
-		ST.headerHeight = 200;
+		ST.headerHeight = 80;
 	}
 
 	ST.updateScroll = function(){
@@ -29,7 +29,6 @@ window.onload = function () {
 				element: currentValue,
 				top: null,
 				height: null,
-				bottom: null,
 				lineWithinEl: (typeof currentValue.dataset.triggerPoint === "undefined") ? 1 : parseFloat(currentValue.dataset.triggerPoint),
 				triggerTop: null,
 				triggerBottom: null,
@@ -51,10 +50,8 @@ window.onload = function () {
 
 			thisObj.height = bounds.height;
 			thisObj.top = bounds.top + ST.scrollTop;
-
 			thisObj.triggerTop = thisObj.top + (thisObj.height * thisObj.lineWithinEl);
-
-			thisObj.triggerBottom = thisObj.top + thisObj.height;
+			thisObj.triggerBottom = thisObj.top + thisObj.height - 30;
 
 		}
 	};
@@ -62,13 +59,12 @@ window.onload = function () {
 	ST.setLines();
 
 	ST.checkFire = function(){
-
 		for (var i = 0; i < ST.elementArray.length; i++) {
 
 			var thisObj = ST.elementArray[i];
 			//
-			if ((thisObj.triggerTop < ST.currentVBottom) &&
-					(thisObj.triggerBottom > ST.currentVTop)) {
+			if ((thisObj.triggerTop > ST.currentVTop) &&
+					(thisObj.triggerBottom < ST.currentVBottom)) {
 
 				thisObj.element.classList.add('triggered');
 
@@ -106,8 +102,6 @@ window.onload = function () {
 	//attach listeners
 	window.addEventListener("scroll", DM.throttle(ST.pullTrigger, 50));
 	window.addEventListener("resize", DM.throttle(ST.refreshLines, 300));
-
-	//}
 
 };
 

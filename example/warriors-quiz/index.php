@@ -10,8 +10,8 @@
         <link rel="manifest" href="/manifest.json">
 
         <link rel="stylesheet" type="text/css" href="css/main.css" />
-        <title>Warriors Quiz – Daniel Mears – Front End Developer</title>
-        <meta name="description" content="Daniel Mears is a creative Front End Developer based in London. He is a specialist in complex Front End Javascript and CSS."/>
+        <title>Warriors Quiz – Daniel Mears – Web Developer</title>
+        <meta name="description" content="Daniel Mears is a creative Web Developer based in London. He is a specialist in complex Web Javascript and CSS."/>
     </head>
     <body class="warriors-quiz">
 

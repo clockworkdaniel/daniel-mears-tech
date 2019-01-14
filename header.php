@@ -19,7 +19,7 @@
         <script type="text/javascript" defer src="js/examples.js"></script>
         <link rel="stylesheet" type="text/css" href="css/main.css" />
         <title>Daniel Mears – Web Developer</title>
-        <meta name="description" content="Daniel Mears is a creative Web Developer based in London. He is a specialist in complex Front End Javascript and CSS."/>
+        <meta name="description" content="Daniel Mears is a creative Web Developer based in London. He is a specialist in complex Web Javascript and CSS."/>
     </head>
 
     <?php 
@@ -133,7 +133,7 @@
         <header class="header">
             <div class="header__titles">
                 <h1 class="header__title">Daniel Mears</h1>
-                <h1 class="header__subtitle">Front End Developer</h1>
+                <h1 class="header__subtitle">Web Developer</h1>
             </div>
             <div class="header__color-wipe">
             </div>

@@ -9,8 +9,8 @@
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/manifest.json">
         <link href="index_bundle.css" rel="stylesheet">
-        <title>React Songwriter – Daniel Mears – Front End Developer</title>
-        <meta name="description" content="Daniel Mears is a creative Front End Developer based in London. He is a specialist in complex Front End Javascript and CSS."/>
+        <title>React Songwriter – Daniel Mears – Web Developer</title>
+        <meta name="description" content="Daniel Mears is a creative Web Developer based in London. He is a specialist in complex Web Javascript and CSS."/>
     </head>
     <body>
         <div id="app">

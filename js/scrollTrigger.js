@@ -51,7 +51,7 @@ window.onload = function () {
 			thisObj.height = bounds.height;
 			thisObj.top = bounds.top + ST.scrollTop;
 			thisObj.triggerTop = thisObj.top + (thisObj.height * thisObj.lineWithinEl);
-			thisObj.triggerBottom = thisObj.top + thisObj.height - 30;
+			thisObj.triggerBottom = thisObj.top + thisObj.height - 100;
 
 		}
 	};

@@ -38,6 +38,21 @@
 					<hr class="examples__item-hr trigger-on-scroll" data-trigger-point="0.1">
 				</div>
 			</li>
+			<li class="examples__item trigger-on-scroll" data-trigger-point="0.1">
+				<a class="examples__item-image" data-iframe-trigger >
+				</a>
+				<div class="examples__item-copy">
+					<h2 class="examples__item-title swipeable-cards-image">Swipey Cocktail Cards</h2>
+					<p>Choose your shortlist of cocktails, and the app will help you with your decision!</p>
+					<ul>
+						<li>tinder-style</li>
+						<li>Touch Events API</li>
+						<li>GSAP Javascript Animations!</li>
+						<li>Graphics could do with some work</li>
+					</ul>
+					<p class="examples__item-text-link"><a href="https://codepen.io/clockworkdaniel/pen/XeMqop" title="CodePen">Here's the codepen &rarr;</a></p>
+				</div>
+			</li>
 			<li class="examples__item">
 				<!-- <a class="examples__item-image" data-iframe-trigger href="/example/amp-product-page/index.php">
 				</a> -->
@@ -69,20 +84,6 @@
 					<p class="examples__item-text-link trigger-on-scroll" data-trigger-point="0.1"><a href="https://github.com/clockworkdaniel/daniel-mears-tech" title="My GitHub" >To the repo &rarr;</a></p>
 				</div>
 			</li>
-			<!-- <li class="examples__item trigger-on-scroll" data-trigger-point="0.1">
-				<a class="examples__item-image" data-iframe-trigger >
-				</a>
-				<div class="examples__item-copy">
-					<h2 class="examples__item-title swipeable-cards-image">Swipeable Cards</h2>
-					<p>Swiped items are compiled for into a shortlist, while the user is presented with more of the sorts of items they are liking.</p>
-					<ul>
-						<li>Touch Events API</li>
-						<li>GSAP Javascript Animations</li>
-						<li>AJAX</li>
-					</ul>
-					<p class="examples__item-text-link"><a>This example will be up soon!</a></p>
-				</div>
-			</li> -->
 			<!-- <li class="examples__item trigger-on-scroll" data-trigger-point="0.1">
 				<a class="examples__item-image warriors-quiz-image" data-iframe-trigger >
 				</a>

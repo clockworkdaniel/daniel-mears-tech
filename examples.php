@@ -38,19 +38,20 @@
 					<hr class="examples__item-hr trigger-on-scroll" data-trigger-point="0.1">
 				</div>
 			</li>
-			<li class="examples__item trigger-on-scroll" data-trigger-point="0.1">
+			<li class="examples__item">
 				<a class="examples__item-image" data-iframe-trigger >
 				</a>
 				<div class="examples__item-copy">
-					<h2 class="examples__item-title swipeable-cards-image">Swipey Cocktail Cards</h2>
-					<p>Choose your shortlist of cocktails, and the app will help you with your decision!</p>
-					<ul>
+					<h2 class="examples__item-title trigger-on-scroll" data-trigger-point="0.1">Swipey Cocktail Cards</h2>
+					<p class="trigger-on-scroll" data-trigger-point="0.1">Choose your shortlist of cocktails, and the app will help you with your decision!</p>
+					<ul class="trigger-on-scroll" data-trigger-point="0.1">
 						<li>tinder-style</li>
 						<li>Touch Events API</li>
 						<li>GSAP Javascript Animations!</li>
 						<li>Graphics could do with some work</li>
 					</ul>
-					<p class="examples__item-text-link"><a href="https://codepen.io/clockworkdaniel/pen/XeMqop" title="CodePen">Here's the codepen &rarr;</a></p>
+					<p class="examples__item-text-link trigger-on-scroll" data-trigger-point="0.1"><a href="https://codepen.io/clockworkdaniel/pen/XeMqop" title="CodePen">Here's the codepen &rarr;</a></p>
+					<hr class="examples__item-hr trigger-on-scroll" data-trigger-point="0.1">
 				</div>
 			</li>
 			<li class="examples__item">
@@ -79,7 +80,8 @@
 						<li>History Manipulation with History API</li>
 						<li>JS Promises</li>
 						<li>Custom JS Scroll Handling</li>
-						<li>SASS</li>
+						<li>Webpack for JS/SASS</li>
+						<li>PHP</li>
 					</ul>
 					<p class="examples__item-text-link trigger-on-scroll" data-trigger-point="0.1"><a href="https://github.com/clockworkdaniel/daniel-mears-tech" title="My GitHub" >To the repo &rarr;</a></p>
 				</div>

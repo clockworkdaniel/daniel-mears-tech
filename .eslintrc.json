@@ -1,0 +1,18 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb-base"],
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "import/prefer-default-export": "off",
+    "comma-dangle": "off",
+    "padded-blocks": "off",
+    "react/prop-types": "off",
+    "no-plusplus": "off",
+    "brace-style": "off",
+    "no-underscore-dangle": "off",
+    "consistent-return": "off",
+    "no-param-reassign": "off"
+  }
+}

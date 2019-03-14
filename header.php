@@ -8,15 +8,7 @@
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/manifest.json">
-        <script type="text/javascript" src="vendor/TweenMax.min.js"></script>
-        <script type="text/javascript" src="vendor/TimelineLite.min.js"></script>
-        <script type="text/javascript" src="vendor/DrawSVGPlugin.min.js"></script>
-        <script type="text/javascript" src="js/utility.js"></script>
-        <script type="text/javascript" defer src="js/animations.js"></script>
-        <script type="text/javascript" defer src="js/index.js"></script>
-        <script type="text/javascript" defer src="js/scrollTrigger.js"></script>
-        <script type="text/javascript" defer src="js/pageFlow.js"></script>
-        <script type="text/javascript" defer src="js/examples.js"></script>
+        <script defer type="text/javascript" src="dist/bundle.js"></script>
         <link rel="stylesheet" type="text/css" href="css/main.css" />
         <title>Daniel Mears – Web Developer</title>
         <meta name="description" content="Daniel Mears is a creative Web Developer based in London. He is a specialist in complex Web Javascript and CSS."/>

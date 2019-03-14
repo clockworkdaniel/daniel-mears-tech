@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'pt Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(../../fonts/PT_Sans-Web-Regular.ttf) format('truetype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'permanent marker';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Permanent Marker Regular'), local('PermanentMarker-Regular'), url(../../fonts/permanent-marker.woff2) format('woff2'), url(../../fonts/PermanentMarker-Regular.ttf) format('truetype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+
+%display {
+	font-family: 'permanent marker';
+	font-weight: normal;
+}
+
+@mixin display {
+  font-family: 'permanent marker';
+	font-weight: normal;
+}
+
+%emphasis {
+	font-family: 'crimson text';
+	font-style: italic;
+	font-size: 1.7rem;
+}
+
+$copy: 'pt sans';
+
+%header-title {
+	display: inline-block;
+	line-height: 1;
+	color: $white;
+	text-align: center;
+	margin: 0;
+	@extend %display;
+}
+
+%header-title-gradient {
+	background-image: linear-gradient(27deg, $hot-pink, $hot-teal);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	font-family: $copy;
+	color: $white;
+}
+
+h1, h2 {
+  @extend %display;
+  letter-spacing: 0.01em;
+} 
+
+h1 {
+	font-size: 1.7rem;
+}
+
+p, li {
+	color: $white;
+	font-family: $copy;
+	text-align: left;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+}
+
+.section-title {
+	font-size: 5rem;
+}
+
+.pull-out-copy {
+	@extend %emphasis;	
+}
+
